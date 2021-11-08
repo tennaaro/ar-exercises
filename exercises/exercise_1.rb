@@ -18,7 +18,7 @@ gastown = {name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_a
 
 stores = Store.create([burnaby, richmond, gastown])
 
-puts stores.count
+puts Store.count
 
 # {name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: true}
 # Burnaby = Store.new
