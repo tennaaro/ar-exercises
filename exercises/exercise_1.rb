@@ -7,7 +7,7 @@ puts "----------"
 
 
 class Store < ActiveRecord::Base
-
+  has_many :employees
 end
 
 #  id | name | annual_revenue | mens_apparel | womens_apparel | created_at | updated_at 
