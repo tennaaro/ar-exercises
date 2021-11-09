@@ -8,6 +8,9 @@ puts "----------"
 
 class Store < ActiveRecord::Base
   has_many :employees
+  validates_associated :employees
+  validates :name, length: {minimum: 3}
+  validates :annual_revenue, numericality: { greater_than_or_equal_to: 0 }
 end
 
 #  id | name | annual_revenue | mens_apparel | womens_apparel | created_at | updated_at 
